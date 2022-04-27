@@ -1,4 +1,4 @@
-
+/* SECTION 1 */
 #section-1{
  height: 654px;
  background-color: var(--warna5);
@@ -33,6 +33,22 @@
     position: absolute;
 }
 
+@media (max-width: 1399px) {
+  #section-1{
+      height: 580px;
+  }
+  #section-1 .col:nth-child(1) img{
+      width: 450px;
+  }
+  #section-1 .col:nth-child(2) h1{
+      width: 546px;
+      line-height: 63px;
+      font-size: 42px;
+  }
+}
+/* SECTION 1 */
+
+/* SECTION 2 */
 #section-2{
     height: 628px;
     background-color: var(--warna1);
@@ -71,19 +87,139 @@
     font-size: 24px;
     font-weight: 700;
 }
-@media (max-width: 1399px) {
-    #section-1{
-        height: 580px;
-    }
-    #section-1 .col:nth-child(1) img{
-        width: 450px;
-    }
-    #section-1 .col:nth-child(2) h1{
-        width: 546px;
-        line-height: 63px;
-        font-size: 42px;
-    }
+
+/* SECTION 2 */
+
+/* SECTION 3 */
+#section-3{
+  position: relative;
+  background-color: var(--warna1);
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  min-height: 130vh;
 }
+
+.front {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.wrap {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.back {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.back img {
+  margin-left: -12px;
+}
+
+.back-judul {
+  position: absolute;
+  font-size: 18px;
+  top: 20%;
+  left: -1%;
+  right: 0;
+  padding-left: 8%;
+  padding-right: 10%;
+}
+
+.back-paragraph,
+.back-paragraph-ess {
+  position: absolute;
+  top: 42%;
+  font-size: 12px;
+  padding-left: 8%;
+  padding-right: 10%;
+}
+
+#section-3 .solusiButton {
+  position: absolute;
+  top: 70%;
+  font-weight: 600;
+  font-size: 18px;
+  left: 10%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #2b2b29;
+  color: white;
+  border-radius: 10px;
+}
+
+#section-3 .solusiButton:hover {
+  background-color: #ffa600 !important;
+}
+
+#section-3 .col:hover .wrap {
+  transform: rotateY(180deg);
+}
+
+@media (min-width:992px) {
+  #section-3 .row {
+    display: flex;
+  }
+
+  #section-3 .solusiButton {
+    font-size: 14px;
+    width: 75%;
+    height: 50px;
+  }
+
+}
+
+@media (min-width:1200px) {
+  #section-3 {
+    height: 800px;
+  }
+  #section-3 .judul {
+    font-size: 48px !important;
+  }
+  .back-judul {
+    font-size: 1.3rem;
+    padding-left: 8%;
+    padding-right: 10%;
+  }
+  .back-paragraph,
+  .back-paragraph-ess {
+    font-size: 14px;
+  }
+  #section-3 .btn {
+    font-size: 16px;
+  }
+  #section-3 .solusiButton {
+    font-size: 16px;
+    width: 75%;
+    height: 66px;
+    left: 11%;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  #section-3 .back-judul {
+    font-size: 1.75rem;
+  }
+
+  .back-paragraph,
+  .back-paragraph-ess {
+    position: absolute;
+    font-size: 18px;
+  }
+  #section-3 .btn {
+    font-size: 18px;
+  }
+}
+/* SECTION 3 */
 
 /* SECTION 4 */
 #section-4 {
