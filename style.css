@@ -2,6 +2,7 @@
 #section-1{
  height: 654px;
  background-color: var(--warna5);
+ box-shadow: var(--warna5) 0px 10px;
  text-transform: uppercase;
  position: relative;
  z-index: 1;
@@ -35,6 +36,7 @@
 #section-2{
     height: 628px;
     background-color: var(--warna1);
+    box-shadow: var(--warna1) 0px 10px;
     position: relative;
     z-index: 1;
 }
