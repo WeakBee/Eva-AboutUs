@@ -65,3 +65,16 @@
     font-size: 24px;
     font-weight: 700;
 }
+@media (max-width: 1399px) {
+    #section-1{
+        height: 580px;
+    }
+    #section-1 .col:nth-child(1) img{
+        width: 450px;
+    }
+    #section-1 .col:nth-child(2) h1{
+        width: 546px;
+        line-height: 63px;
+        font-size: 42px;
+    }
+}
