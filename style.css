@@ -1,0 +1,67 @@
+
+#section-1{
+ height: 654px;
+ background-color: var(--warna5);
+ text-transform: uppercase;
+}
+
+#section-1 .container , #section-1 .row{
+ height: 100%;
+}
+
+#section-1 .col:nth-child(1){
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#section-1 .col:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+
+#section-1 .col:nth-child(2) h1{
+    width: 576px;
+    line-height: 83px;
+    margin-top: 30px;
+}
+
+#section-1 .model{
+    position: absolute;
+}
+
+#section-2{
+    height: 628px;
+    background-color: var(--warna1);
+}
+#section-2 .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#section-2 .liquid{
+    position: absolute;
+    right: 0;
+    width: 50vw;
+}
+#section-2 .col:nth-child(1) p{
+    color: #4A5568;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 36px;
+    margin-bottom: 48px;
+}
+#section-2 .col:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-2 .col:nth-child(2) div{
+    margin: 0 50px;
+    text-align: center;
+}
+#section-2 .col:nth-child(2) div p{
+    color: #4A5568;
+    font-size: 24px;
+    font-weight: 700;
+}
