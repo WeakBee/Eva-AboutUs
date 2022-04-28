@@ -76,6 +76,12 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  body {
+    background-color: var(--warna4);
+  }
+}
+
 @media (max-width: 575px) {
   .solusibtn {
     font-weight: 400;
