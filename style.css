@@ -152,6 +152,7 @@
     position: absolute;
     right: 0;
     width: 50vw;
+    z-index: -1;
 }
 #section-2 .col-lg:nth-child(1) p{
     color: #4A5568;
