@@ -1,8 +1,63 @@
 gsap.registerPlugin(ScrollTrigger);
 
-if (window.matchMedia("(min-width: 992px)").matches) {
-  
+gsap.to("#section-1 .model", {
+  scale: 0.85,
+  transformOrigin: "center bottom",
+  duration: 0.5,
+  delay: 0.5,
+});
+gsap.to("#section-1 .model", {
+  scale: 1,
+  transformOrigin: "center bottom",
+  duration: 1,
+  delay: 1,
+});
+gsap.to("#section-1 .mask1", {
+  scaleY: 0,
+  transformOrigin: "top bottom",
+  duration: 1,
+  delay: 0.5,
+});
+gsap.to("#section-1 .mask2", {
+  scaleY: 0,
+  transformOrigin: "top bottom",
+  duration: 1,
+  delay:1,
+});
 
+var Cont = { val: 50 },
+  NewVal = 250;
+
+TweenLite.to(Cont, 2, {
+  val: NewVal,
+  roundProps: "val",
+  onUpdate: function () {
+    document.getElementById("counter").innerHTML = Cont.val;
+  },
+  scrollTrigger: {
+    trigger: "#section-2",
+    start: 'top center',
+    toggleActions: 'restart pause resume pause',
+  },
+});
+
+var Cont2 = { val: 0 },
+  NewVal = 55;
+
+TweenLite.to(Cont2, 2, {
+  val: NewVal,
+  roundProps: "val",
+  onUpdate: function () {
+    document.getElementById("counter2").innerHTML = Cont2.val;
+  },
+  scrollTrigger: {
+    trigger: "#section-2",
+    start: 'top center',
+    toggleActions: 'restart pause resume pause',
+  },
+});
+
+if (window.matchMedia("(min-width: 992px)").matches) {
   const tl4 = gsap.timeline();
   tl4
     .fromTo("#section-4 .judul", { opacity: 0, scale: 1.3, duration: 1.5 }, { opacity: 1, scale: 1, duration: 3 })

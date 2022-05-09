@@ -117,12 +117,22 @@
     <section id="section-1">
       <div class="container">
         <div class="row">
-            <div class="col-lg order-lg-first order-last">'
+            <div class="col-lg order-lg-first order-last">
+                <div class="mask mask1"></div>
                 <img class="model" src="Assets/Section-1-Model.webp" alt="model">
                 <img src="Assets/Section-1-Padding.webp" alt="">
             </div>
             <div class="col-lg order-lg-last order-first">
-                <h1 class="judul">EVA SOFTWARE MAKSIMALKAN KINERJA HR TERHEBAT DI DUNIA</h1>
+              <div>
+                <div class="mask mask2"></div>
+                <h1 class="judul">EVA SOFTWARE</h1>
+                <div class="mask mask2"></div>
+                <h1 class="judul">MAKSIMALKAN</h1>
+                <div class="mask mask2"></div>
+                <h1 class="judul">KINERJA HR</h1>
+                <div class="mask mask2"></div>
+                <h1 class="judul">TERHEBAT DI DUNIA</h1>
+              </div>
             </div>
         </div>
       </div>          
@@ -145,11 +155,14 @@
             </div>
             <div class="col-lg">
                 <div>
-                    <h1 class="judul">250+</h1>
+                    <span id="counter" class="judul">0</span>
+                    <span class="judul">+</span>
                     <p>Klien</p>
                 </div>
                 <div>
-                    <h1 class="judul">55.000+</h1>
+                    <span id="counter2" class="judul">1</span>
+                    <span class="judul">.000</span>
+                    <span class="judul">+</span>
                     <p>Pengguna</p>
                 </div>
             </div>
@@ -746,6 +759,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="navbar.js"></script>
     <script src="app.js"></script>
 </body>
