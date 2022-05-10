@@ -506,15 +506,18 @@
 }
 
 /* FORM SECTION */
+.formSection .card-form h3 {
+  font-size: 32px !important;
+}
 .formSection .text-yellow {
-  color: #ffa600;
+  color: #F29E01;
 }
 .formSection {
   font-family: "Inter", sans-serif;
   position: relative;
-  background-color: #edf2f7;
-  border-radius: 0 0 152px 152px;
+  background-color: #EDF2F7;
   z-index: 1;
+  border-radius: 0 0 152px 152px;
 }
 .formSection .formContent {
   padding: 65px 0px;
@@ -575,23 +578,42 @@
   }
 }
 
+.form-choice {
+  background-color: #FEFDFD !important;
+  border-radius: 10px;
+  color: #4A5568 !important;
+}
+
+.pesan {
+  border: 1px solid #ededed;
+  background-color: #f7fafc;
+  color: #4A5568;
+  font-size: 15px;
+}
+
+.pesan::placeholder {
+  color: #A0AEC0;
+}
+
 .formSection .card-form {
-  box-shadow: -10px -10px 25px #f1f8ff, 10px 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 13px 14px 21px rgb(0 0 0 / 10%);
   transition: 2s;
   background-color: white;
   border-radius: 20px;
   padding: 30px;
+  padding-bottom: 36px !important;
   color: #2d3748;
 }
+
 .formSection .card-form h3:nth-child(1) {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .formSection input,
 .formSection select {
   border: 1px solid #ededed;
   background-color: #f7fafc;
-  color: #a0aec0;
+  color: #4A5568;
   font-size: 12px;
   padding: 7px 10px;
   margin-top: 5px;
@@ -607,7 +629,7 @@
 .formSection button {
   color: #2d3748;
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 .formSection .produk {
   margin-top: 130px;
@@ -618,7 +640,20 @@
   line-height: 125%;
   border: none;
 }
+@media (max-width: 374px) {
+  .formSection .card-form h3 {
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 375px) {
+  .formSection .card-form h3 {
+    font-size: 16px !important;
+  }
+}
 @media (min-width: 576px) {
+  .formSection .card-form h3 {
+    font-size: 24px !important;
+  }
   .formSection::after {
     height: 50px;
     border-radius: 0px 0px 50px 50px;
@@ -645,6 +680,9 @@
   }
 }
 @media (min-width: 992px) {
+  .formSection .card-form h3 {
+    font-size: 24px !important;
+  }
   .formSection {
     margin-bottom: 140vh;
   }
@@ -680,6 +718,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .formSection .card-form h3 {
+    font-size: 28px !important;
+  }
   .formSection::after {
     height: 130px;
     border-radius: 0px 0px 70px 70px;
@@ -698,15 +739,18 @@
 }
 
 @media (min-width: 1400px) {
+  .formSection .card-form h3 {
+    font-size: 32px !important;
+  }
   .formSection {
     margin-bottom: 0vh;
   }
   .formSection input,
   .formSection select {
-    font-size: 13px;
+    font-size: 15px;
   }
   .formSection label {
-    font-size: 17px;
+    font-size: 15px;
   }
   .formSection .image-form img {
     max-height: 550px;

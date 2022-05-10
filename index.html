@@ -326,6 +326,7 @@
     <section id="form" class="formSection">
       <img
         src="img/element-oval2.png"
+        loading="lazy"
         alt="element-oval"
         class="element-oval"
       />
@@ -336,14 +337,17 @@
               <div class="image-form w-100 h-100">
                 <img
                   src="img/formal-no-padding-adjusted.webp"
+                  loading="lazy"
                   alt="Form People"
                 />
                 <img
                   src="img/casual-no-padding-adjusted.webp"
+                  loading="lazy"
                   alt="Form People"
                 />
                 <img
                   src="img/fun-no-padding-adjusted.webp"
+                  loading="lazy"
                   alt="Form People"
                 />
                 <div class="background-form"></div>
@@ -353,23 +357,23 @@
               <div class="card-form">
                 <h3>
                   Dapatkan <span class="text-yellow">demo </span>Software EVA
-                  secara <span class="text-yellow">gratis!</span>
+                  Rekrutmen secara <span class="text-yellow">gratis!</span>
                 </h3>
                 <form action="">
                   <div class="row">
                     <div class="col-sm">
-                      <label for="nama" class="mt-3">Nama Lengkap</label>
+                      <label for="nama" class="mt-4">Nama Lengkap</label>
                       <input
                         type="text"
                         name="nama"
                         id="nama"
                         class="form-control"
                         required
-                        placeholder="Nama Lengkap"
+                        placeholder="Isi nama lengkap Anda"
                       />
                     </div>
                     <div class="col-sm">
-                      <label for="namaPerusahaan" class="mt-3"
+                      <label for="namaPerusahaan" class="mt-4"
                         >Nama Perusahaan</label
                       >
                       <input
@@ -378,25 +382,25 @@
                         id="namaPerusahaan"
                         class="form-control"
                         required
-                        placeholder="Nama Perusahaan"
+                        placeholder="Isi nama perusahaan Anda"
                       />
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-sm">
-                      <label for="email" class="mt-3">Email</label>
+                      <label for="email" class="mt-4">Email</label>
                       <input
                         type="email"
                         name="email"
                         id="email"
                         class="form-control"
                         required
-                        placeholder="Email"
+                        placeholder="Isi alamat email Anda"
                       />
                     </div>
                     <div class="col-sm">
-                      <label for="notelp" class="mt-3"
+                      <label for="notelp" class="mt-4"
                         >No. Telp/Whatsapp</label
                       >
                       <input
@@ -412,11 +416,11 @@
 
                   <div class="row">
                     <div class="col-sm">
-                      <label for="industri" class="mt-3"
-                        >Pilih Industri</label
+                      <label for="industri" class="mt-4"
+                        >Area Industri</label
                       >
                       <select
-                        class="form-select"
+                        class="form-select form-choice"
                         aria-label="Default select example"
                       >
                         <option selected>Pilih Industri</option>
@@ -442,9 +446,9 @@
                       </select>
                     </div>
                     <div class="col-sm">
-                      <label for="industri" class="mt-3">Pilih Solusi</label>
+                      <label for="industri" class="mt-4">Pilih Solusi</label>
                       <select
-                        class="form-select"
+                        class="form-select form-choice"
                         aria-label="Default select example"
                       >
                         <option selected>Pilih Solusi</option>
@@ -487,7 +491,7 @@
 
                   <div class="row">
                     <div class="col-sm">
-                      <label for="karyawan" class="mt-3"
+                      <label for="karyawan" class="mt-4"
                         >Jumlah Karyawan</label
                       >
                       <input
@@ -500,29 +504,28 @@
                       />
                     </div>
                     <div class="col-sm">
-                      <label for="implementasi" class="mt-3"
+                      <label for="implementasi" class="mt-4"
                         >Kapan Waktu Implementasi?</label
                       >
                       <input
                         type="date"
                         name="implementasi"
                         id="implementasi"
-                        class="form-control"
+                        class="form-control form-choice"
                         required
                         placeholder="No. Telp/Whatsapp"
                       />
                     </div>
                   </div>
-                  <label for="pesan" class="mt-3">Pesan Anda</label>
-                  <input
-                    type="text"
+                  <label for="pesan" class="mt-4">Pesan Anda</label>
+                  <textarea
                     name="pesan"
                     id="pesan"
-                    class="form-control"
+                    class="form-control input pesan"
                     required
                     placeholder="Pesan Anda"
-                  />
-                  <div class="text-end w-100">
+                  ></textarea>
+                  <div class="text-end w-100 btn-form">
                     <button
                       type="submit"
                       value="Kirim"
