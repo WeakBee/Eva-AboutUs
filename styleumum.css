@@ -13,6 +13,46 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.borderakhir {
+  position: absolute;
+  border-radius: 0px 0px 50px 50px;
+  background-color: #edf2f7;
+  margin-top: -10px;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.borderakhir .process {
+  background-color: transparent;
+  color: #2D3748;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  border: none;
+  transform: translateY(40px);
+  z-index: 2;
+}
+
+.liquidborderakhir {
+  position: absolute;
+  margin-top: 110px;
+}
+
+@media (max-width: 992px) {
+  .liquidborderakhir {
+    display: none;
+  }
+  .borderakhir {
+    border-radius: 0px 0px 100px 100px;
+  }
+  .borderakhir .process {
+    transform: translateY(0);
+  }
+}
+
 .solusibtn {
   background-color: var(--warna4);
   border-radius: 12px;
