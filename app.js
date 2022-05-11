@@ -90,6 +90,6 @@ if (window.matchMedia("(min-width: 992px)").matches) {
   });
 }
 
-$(".produk").click(function() {
+$(".process").click(function() {
     $(window).scrollTop(0);
 });

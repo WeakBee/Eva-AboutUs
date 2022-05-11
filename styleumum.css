@@ -13,6 +13,12 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+#all {
+  background-color: var(--warna1);
+  position: relative;  
+  z-index: 1; 
+}
+
 .borderakhir {
   position: absolute;
   border-radius: 0px 0px 50px 50px;
