@@ -37,7 +37,7 @@ TweenLite.to(Cont, 2, {
   scrollTrigger: {
     trigger: "#section-2",
     start: 'top center',
-    toggleActions: 'restart pause resume pause',
+    toggleActions: 'play none none none',
   },
 });
 
@@ -53,7 +53,7 @@ TweenLite.to(Cont2, 2, {
   scrollTrigger: {
     trigger: "#section-2",
     start: 'top center',
-    toggleActions: 'restart pause resume pause',
+    toggleActions: 'play none none none',
   },
 });
 
