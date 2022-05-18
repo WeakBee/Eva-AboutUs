@@ -88,6 +88,24 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     scrub: 1,
     // markers: true,
   });
+
+  //section 3 - flip-card Animation
+  const tlflip = gsap.timeline();
+  tlflip
+    .fromTo(".anim5 .judul", { opacity: 0, scale: 1.3, duration: 0.3 },  { opacity: 1, scale: 1, duration: 0.5 })
+    .fromTo(".anim5", {y: 200}, {y: 0, duration: 0.6, })
+    .fromTo(".anim6", {autoAlpha:0, x:-50}, {autoAlpha: 1, x: 0, duration: 1, ease: 'power3.inOut'} )
+  
+  
+  ScrollTrigger.create({
+    animation: tlflip,
+    trigger: "#flip-card",
+    start:"0% 10%",
+    end: "80% center",
+    toggleActions: "play none none none",
+    marker: "true",
+  });
+  //end section3 animation
 }
 
 $(".process").click(function() {
