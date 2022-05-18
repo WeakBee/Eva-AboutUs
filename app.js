@@ -111,3 +111,11 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 $(".process").click(function() {
     $(window).scrollTop(0);
 });
+
+$( ".form-control" ).change(function() {
+  if( !this.value ) {
+    $(this).css({'background-color': '#f7fafc'}); 
+  } else {
+    $(this).css({'background-color': 'white'}); 
+  }
+});
